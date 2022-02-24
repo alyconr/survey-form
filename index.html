@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./mystyles.css"><script src="https://kit.fontawesome.com/c06d1ae656.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header>
+<div><h1 id="title">SURVEY FORM</h1>
+    <p id="description"> This is a Free Code Camp Survay Form where  I can show and stand out my Html and Css Skills</p>
+</div>
+</header>
+
+<main>
+      
+       <form id="survey-form"> 
+           <label id="name-label" for="name">FIRST NAME</label>
+        <input id="name" name="name" type="text" placeholder="Enter Your Name" required />
+
+        <label id="lastname-label" for="name">LAST NAME</label>
+        <input id="lastname" name="lastname" type="text" placeholder="Enter Your Last Name" required />
+        
+        <label id="email-label" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Enter Your Email" required />
+         
+        <label id="number-label" for="number">Age</label>
+        <input id="number" name="age" type="number" min="5" max="90" placeholder="Enter Your Age" />
+
+    
+
+  
+
+                <div >
+            <p class="msg-survey">Which of the following Css frameworks do you prefer the most?</p>  </div>
+
+            <select name="role" id="dropdown" required> 
+                <option disabled selected value >Select Your Prefer Css Framework</option>
+                <option value="Boostrap">Bootstrap</option>
+                <option value="Tailwind">Tailwind</option>
+                <option value="Foundation">Foundation</option>
+                <option value="Bulma">Bulma</option>
+                <option value="Skeleton">Skeleton</option>
+            </select>
+            <div class="msg-survey">
+            <p>
+            Which OS System do you prefer for coding?</p>
+            </div>
+            <div class="button-os">
+            <label >
+                <input type="radio" name="recomended" value="linux" type="radio" checked>LinuxOS</label>
+                
+                <label >
+                    <input type="radio" name="recomended" value="Windows" type="radio">Windows</label> 
+                
+                    <label >
+                        <input type="radio" name="recomended" value="Windows" type="radio">MacOS</label> 
+            </div>
+
+            <div class="msg-survey">
+                <p> Which of the following Backend Frameworks would you like to learn?</p> 
+                </div>
+            
+                <div id="checkboxes">
+                <label ><input
+                  name="prefer"
+                  value="asp.net"
+                  type="checkbox"
+                  class="input-checkbox"
+                />ASP.NET</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value="express"
+                  type="checkbox"
+                  class="input-checkbox"
+                />EXPRESS</label
+              >
+
+              <label>
+                <input
+                  name="prefer"
+                  value="django"
+                  type="checkbox"
+                  class="input-checkbox"
+                />DJANGO</label
+              >
+              
+              <label>
+                <input
+                  name="prefer"
+                  value="laravel"
+                  type="checkbox"
+                  class="input-checkbox"
+                />LARAVEL</label
+              >
+
+              <label>
+                <input
+                  name="prefer"
+                  value="rails"
+                  type="checkbox"
+                  class="input-checkbox"
+                />RAILS</label
+              >
+
+              <label>
+                <input
+                  name="prefer"
+                  value="node.js"
+                  type="checkbox"
+                  class="input-checkbox"
+                />NODE.JS</label
+              >
+            </div>
+            <div class="msg-survey">
+                <p> If you have any comment please send it to me asap.</p> 
+                </div>
+            <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+        <div>
+            <button type="submit" id="submit"
+            >SUBMIT</button>
+
+        </div>
+
+         
+   </form>
+
+
+
+
+</main>
+
+<footer>
+    <div id="footer-container">
+
+        <div class="footer-left">
+            <h2>About</h2> <br> <h2 id="about">It gets completed using Html and Pure Css, 17/17 tests passed. </h2>
+        </div>
+        <div class="footer-right">
+            
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <div class="copyright"> <h2>freecodecamp <a href="symbol"> <i class="fa-solid fa-copyright"></i></a> 2022 </h2> <h2 style="font-size: 20px;">  Designed and coded by @alyconr</h2> </div>
+            
+        </div>
+       
+            
+    </div>
+   
+    
+</footer>
+
+
+
+
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
