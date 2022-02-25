@@ -57,9 +57,78 @@ body::before {
       font-weight: bold;
   }
 
+
+  .image-tree {
+      width: 15%;
+      position: relative;
+      display: flex;
+     margin: 10% 45%;
+    
+
+      
+
+  }
+  .svg-wrapper {
+    position: relative;
+    top: 90%;
+    transform: translateY(-50%);
+    transform: translateX(6%);
+    margin: 0 3rem;
+    width: 90%;
+    
+    
+  }
+  .shape1,
+  .shape2 {
+    stroke-dasharray: 1620;
+    stroke-width: 8px;
+    fill: transparent;
+    stroke: #19f6e8;
+    border-bottom: 8px solid rgb(0, 0, 0);
+    transition-timing-function: linear;
+    transition: stroke-dashoffset 5s, stroke-dasharray 10s;
+   
+    
+    
+  }
+  .shape1 {
+    stroke-dashoffset: 1620;
+  }
+  .shape2 {
+    stroke-dashoffset: -1620;
+  }
+  .text .a {
+    font-family: 'Roboto Condensed';
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 8px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    top: -48px;
+    position: relative;
+    text-decoration: none;
+    left: 30px;
+    
+    
+  }
+
+  .text a:hover {
+    color: orange;
+}
+.svg-wrapper:hover .shape1,
+.svg-wrapper:hover .shape2 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1620;
+ 
+
+  
+}
+
+
+
   form {
     background: var(--color-darkblue-alpha);
-    padding: 5.9rem 2rem;
+    padding: 0.5rem 5rem 5rem 5rem;
     border-radius: 0.25rem;
     margin: 15vh 15vw;
   }
