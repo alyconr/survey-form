@@ -20,6 +20,8 @@ body {
     line-height: 1.4;
     color: var(--color-white);
     margin: 0;
+    
+
      
 }
 
@@ -41,6 +43,7 @@ body::before {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  
     
   }
 
@@ -60,97 +63,77 @@ body::before {
 
   .image-tree {
       width: 20%;
-      position: relative;
-      display: flex;
-     margin: 10% 45%;
-    
-
+      padding: 30px;
+      
       
 
   }
-  .svg-wrapper {
-    position: relative;
-    top: 90%;
-    transform: translateY(-50%);
-    transform: translateX(6%);
-    margin: 0 3rem;
-    width: 90%;
     
-    
-  }
-  .shape1,
-  .shape2 {
-    stroke-dasharray: 1620;
-    stroke-width: 8px;
-    fill: transparent;
-    stroke: #19f6e8;
-    border-bottom: 8px solid rgb(0, 0, 0);
-    transition-timing-function: linear;
-    transition: stroke-dashoffset 5s, stroke-dasharray 10s;
+  .container1 {
+        display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items:center;
+       
+         
+         
+  }  
    
-    
-    
-  }
-  .shape1 {
-    stroke-dashoffset: 1620;
-  }
-  .shape2 {
-    stroke-dashoffset: -1620;
-  }
-  .text .a {
-    font-family: 'Roboto Condensed';
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: 8px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    top: -48px;
-    position: relative;
-    text-decoration: none;
-    left: 30px;
-    
-    
-  }
+ .container2 {
+    display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items:flex-start;
+   
+     
+     
+}  
 
-  .text a:hover {
+  .text  {
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+     letter-spacing: 8px;
+    color: antiquewhite;
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+  .text:hover {
     color: orange;
 }
-.svg-wrapper:hover .shape1,
-.svg-wrapper:hover .shape2 {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 1620;
- 
-
-  
-}
 
 
 
-  form {
+
+  #survey-form {
     background: var(--color-darkblue-alpha);
-    padding: 0.5rem 5rem 5rem 5rem;
-    border-radius: 0.25rem;
-    margin: 15vh 15vw;
+   border-radius: 0.25rem;
+    position: relative;
+    
+    margin: 6em 12em;
+    
+    
   }
 
  
- #name-label, #lastname-label, #email-label, #number-label  {
+ #name-label, #lastname-label, #email-label, #number-label, .msg-survey  {
     position: relative;
     left: 48px;
     font-weight: bold;
-    top: 30px;
+    top:40px;
    
 }
  
 
-#number, #email, #lastname, #name, #dropdown, .msg-survey, #comments  {
+#number, #email, #lastname, #name, #dropdown,  #comments  {
     width: 90%;
     padding: 10px ;
     position: relative;
     left: 50px;
-    display: flex;
-    top: 1rem;
-    margin-top: 20px;
+    top: 2rem;
+    margin-top: 30px;
+   
+    
     
 } 
 
@@ -164,11 +147,11 @@ body::before {
 .button-os {
 
     width: 90%;
-    height: 50px;
+    height: 80px;
     position: relative;
     left: 60px;
     display: flex;
-    top: 5px;
+    top: 30px;
     flex-direction: column;
     font-size: 20px;
 }
@@ -180,25 +163,26 @@ body::before {
     position: relative;
     left: 60px;
     font-size: 20px;
-    height: 6.5em;
+    height: 8em;
+    top: 30px;
+    
 }
 
-#submit {
+.center {
 
     width: 50%;
     padding: 20px ;
-    position: relative;
-    left: 25%;
-    display: flex;
-    top: 3rem;
-    margin-top: 20px;
-    justify-content: center;
+    display: grid;
+    margin: 10% auto;
+    top: 2rem;
     background-color: var(--color-darkblue);
     color: #fdfdfd;
     border: 5px outset gray;
     font-weight: bold;
     font-size: 20px;
     cursor: pointer;
+    z-index: 1;
+   
 }
 
 #submit:hover {
@@ -216,6 +200,7 @@ body::before {
     width: 100%;
     padding: 10px 50px;
     display: flex;
+    height: 50%;
     justify-content: space-between;
     
     
@@ -234,7 +219,7 @@ body::before {
 }
 .footer-left {
     color: white;
-    width: 50rem;
+    width: 45rem;
     height: 20rem;
     border-right: 2px solid white;
     font-size: 30px;
