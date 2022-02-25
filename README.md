@@ -12,4 +12,4 @@ two colors.
 
 
 ## Link Survey Form bellow: 
-[<img src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/99/000000/external-click-music-and-multimedia-smashingstocks-hand-drawn-black-smashing-stocks.png" />](https://github.com/alyconr/survey-form)
+[<img src="https://img.icons8.com/external-smashingstocks-hand-drawn-black-smashing-stocks/99/000000/external-click-music-and-multimedia-smashingstocks-hand-drawn-black-smashing-stocks.png" />](https://alyconr.github.io/survey-form/)
